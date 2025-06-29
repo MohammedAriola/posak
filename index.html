@@ -6,11 +6,11 @@
   <title>POSĀK - Not Just Drip</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
   <style>
     body {
       margin: 0;
-      font-family: 'Orbitron', sans-serif;
+      font-family: 'Montserrat', sans-serif;
       background: #fff;
       color: #000;
     }
@@ -25,6 +25,11 @@
       font-size: 2rem;
       font-weight: bold;
       letter-spacing: 4px;
+    }
+    a {
+      text-decoration: none;
+      color: black;
+      font-weight: bold;
     }
     .hero {
       text-align: center;
@@ -47,6 +52,7 @@
       border: none;
       cursor: pointer;
       border-radius: 12px;
+      font-weight: bold;
     }
     .grid {
       display: grid;
@@ -58,24 +64,27 @@
       border: 1px solid black;
       padding: 1rem;
     }
-    .product .img {
+    .product img {
       width: 100%;
       aspect-ratio: 1/1;
-      background: #ccc;
+      object-fit: cover;
       margin-bottom: 1rem;
     }
     .product button {
       width: 100%;
       padding: 0.5rem;
-      background: black;
+      background: gray;
       color: white;
       border: none;
-      cursor: pointer;
+      cursor: not-allowed;
       margin-top: 1rem;
+      font-weight: bold;
+      opacity: 0.7;
     }
     footer {
       border-top: 1px solid black;
       justify-content: center;
+      padding: 1rem;
     }
   </style>
 </head>
@@ -83,38 +92,52 @@
   <header>
     <div class="logo">POSĀK</div>
     <div>
-      <span style="margin-right: 1rem; cursor: pointer;">📷 Instagram</span>
-      <span style="cursor: pointer;">🛒 Carrito</span>
+      <a href="https://www.instagram.com/posakgt/" target="_blank" style="margin-right: 1rem;">📷 Instagram</a>
+      <span>🛒 Carrito</span>
     </div>
   </header>
 
   <section class="hero">
     <h1>Not Just Drip. It’s <span style="text-decoration: underline;">Posāk</span>.</h1>
-    <p>Made in Guatemala · Y2K Inspired · 100% Flow</p>
-    <button>Shop Now</button>
+    <p>Made in Guatemala</p>
+    <button disabled>Próximamente</button>
   </section>
 
   <section class="grid">
     <div class="product">
-      <div class="img"></div>
+      <img src="https://via.placeholder.com/300x300?text=Camisa+Oversize" alt="Camisa Oversize" />
       <h3>Camisa Oversize</h3>
       <p>Edición limitada en blanco</p>
       <p><strong>Q199.00</strong></p>
-      <button>Agregar al carrito</button>
+      <button disabled>Próximamente</button>
     </div>
     <div class="product">
-      <div class="img"></div>
+      <img src="https://via.placeholder.com/300x300?text=Hoodie+Negra" alt="Hoodie Negra" />
       <h3>Hoodie Negra</h3>
       <p>Y2K Energy</p>
       <p><strong>Q299.00</strong></p>
-      <button>Agregar al carrito</button>
+      <button disabled>Próximamente</button>
     </div>
     <div class="product">
-      <div class="img"></div>
+      <img src="https://via.placeholder.com/300x300?text=Gorra+POSAK" alt="Gorra POSĀK" />
       <h3>Gorra POSĀK</h3>
       <p>Para el drip diario</p>
       <p><strong>Q99.00</strong></p>
-      <button>Agregar al carrito</button>
+      <button disabled>Próximamente</button>
+    </div>
+    <div class="product">
+      <img src="https://via.placeholder.com/300x300?text=Camisa+Negra" alt="Camisa Negra" />
+      <h3>Camisa Negra</h3>
+      <p>Drop exclusivo</p>
+      <p><strong>Q219.00</strong></p>
+      <button disabled>Próximamente</button>
+    </div>
+    <div class="product">
+      <img src="https://via.placeholder.com/300x300?text=Shoulder+Bag" alt="Shoulder Bag" />
+      <h3>Shoulder Bag</h3>
+      <p>Minimal Y2K vibe</p>
+      <p><strong>Q159.00</strong></p>
+      <button disabled>Próximamente</button>
     </div>
   </section>
 
